@@ -1,12 +1,39 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng Todo đơn giản được xây dựng bằng React.
 
-Currently, two official plugins are available:
+## Tính năng
+- Thêm công việc mới
+- Đánh dấu hoàn thành công việc
+- Xóa công việc
+- Lưu todo vào LocalStorage (không mất khi tải lại trang)
+- Giao diện đẹp, dễ sử dụng
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Cài đặt và chạy ứng dụng
 
-## Expanding the ESLint configuration
+1. **Cài đặt dependencies**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+cd webbasic
+npm install
+```
+
+2. **Chạy ứng dụng**
+
+```bash
+npm run dev
+```
+
+3. **Mở trình duyệt**
+
+Truy cập địa chỉ được in ra (thường là http://localhost:5173)
+
+## Cấu trúc thư mục chính
+
+- `src/App.jsx`: Logic chính của Todo App
+- `src/assets/app.css`: Style cho ứng dụng
+- `public/`: Thư mục chứa các file tĩnh
+
+## Ghi chú
+- Ứng dụng lưu todo vào LocalStorage, không cần backend.
+- Giao diện responsive cơ bản, dễ chỉnh sửa thêm.
